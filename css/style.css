@@ -1,0 +1,234 @@
+:root {
+    --really-light: #efefef;
+    --dark: #1f1f1f;
+    --dark-hover: #4f4f4f;
+    --accent: #008357;
+    --white: #fff;
+    --light: #aaa;
+    --darker: #777
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid var(--really-light);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--white);
+    z-index: 99;
+}
+
+#navbar-inner {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    color: var(--dark);
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+.navbar-link:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.navbar-icon {
+    font-size: 2em !important;
+    color: var(--dark);
+}
+
+.navbar-icon:hover {
+    color: var(--dark-hover);
+    cursor: pointer;
+}
+
+#header-content {
+    width: 100%;
+    height: 70%;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#header-inner {
+    width: 100%;
+}
+
+#header-inner img {
+    height: 200px;
+}
+
+#header-inner h1 {
+    color: var(--dark);
+    font-size: 4em;
+    padding: 20px;
+}
+
+#header-inner h1 mark {
+    color: var(--accent);
+    background: none;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.section-half {
+    min-height: 60vh;
+}
+
+.section h2 {
+    color: var(--accent);
+    font-size: 4em;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+.section p {
+    text-align: left;
+}
+
+.section-d {
+    background-color: var(--dark);
+}
+
+.section-d p {
+    color: var(--white);
+}
+
+#about p {
+    width: 70%;
+}
+
+#about-text {
+    margin-bottom: 20vh;
+}
+
+#eduction-experience h2 {
+    margin-bottom: 30px;
+}
+
+.edu-exp-card {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    text-align: left;
+}
+
+.edu-exp-card h3 {
+    color: var(--accent);
+}
+
+.edu-exp-card h5 {
+    color: var(--light);
+}
+
+.edu-exp-card p {
+    color: #fff;
+}
+
+.edu-exp-date {
+    color: var(--darker) !important;
+}
+
+.edu-exp-card-outer {
+    padding: 20px;
+    border-left: 5px solid var(--accent);
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border: none;
+}
+
+#contact .btn {
+    padding: 20px;
+}
+
+#contact a i {
+    font-size: 10em;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-hover);
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    color: var(--darker);
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    #header-content {
+        padding: 10px;
+    }
+    #header-inner img {
+        height: 130px;
+    }
+    #header-inner h1 {
+        padding: 10px;
+        font-size: 3em;
+    }
+    .section h2 {
+        font-size: 2.2em;
+    }
+    #about p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+    #about img {
+        height: 120px;
+    }
+
+    .edu-exp-card h3 {
+        font-size: 1.2em;
+    }
+
+    .edu-exp-card {
+        width: 90%;
+    }
+}
